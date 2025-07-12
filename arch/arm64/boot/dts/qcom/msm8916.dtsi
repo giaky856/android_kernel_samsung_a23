@@ -240,31 +240,24 @@
 	};
 
 	cpu_opp_table: cpu_opp_table {
-		compatible = "operating-points-v2";
-		opp-shared;
+    compatible = "operating-points-v2";
+    opp-shared;
 
-		opp-200000000 {
-			opp-hz = /bits/ 64 <200000000>;
-		};
-		opp-400000000 {
-			opp-hz = /bits/ 64 <400000000>;
-		};
-		opp-800000000 {
-			opp-hz = /bits/ 64 <800000000>;
-		};
-		opp-998400000 {
-			opp-hz = /bits/ 64 <998400000>;
-		};
-	};
+    opp-2300000000 {
+        opp-hz = /bits/ 64 <2300000000>;
+        opp-microvolt = <1150000>;
+    };
+};
+
 
 	gpu_opp_table: opp_table {
 		compatible = "operating-points-v2";
 
-		opp-400000000 {
-			opp-hz = /bits/ 64 <400000000>;
+		opp-600000000 {
+			opp-hz = /bits/ 64 <600000000>;
 		};
-		opp-19200000 {
-			opp-hz = /bits/ 64 <19200000>;
+		opp-20000000 {
+			opp-hz = /bits/ 64 <20000000>;
 		};
 	};
 
